@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>house price pred</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container bg-dark rounded text-white p-3">
+        <h1 class="text-center text-uppercase text-warning">House Price Prediction</h1>
+        <form action="/predict" method="post">
+            <div class="container" id="bb">
+                <div class="container">
+                    <label for="bedrooms"  >Bedrooms</label>
+                    <input type="number" class="form-control" name="bedrooms" id="bedrooms" placeholder="eg: 2" required \>
+                </div>
+                <div class="container">
+                    <label for="bathrooms" >Bathrooms</label>
+                    <input type="number" class="form-control mb-1" name="bathrooms" id="bathrooms"  placeholder="eg: 2" required \>
+                </div>   
+            </div>
+            <div class="container" id="bb">
+                <div class="container">
+                    <label for="area" >Area</label>
+                    <input type="number" class="form-control mb-1" name="area" id="area" placeholder="eg: 2000" required \>
+                </div>
+                <div class="container">
+                    <label for="floors" >Floors</label>
+                    <input type="number" class="form-control mb-1"  name="floors" id="floors" placeholder="eg: 2" required \>
+                </div>
+            </div>
+            <div class="container" id="bb">
+                <div class="container">
+                    <label for="coth" >Condition (years)</label>
+                    <input type="number" class="form-control mb-1" id="coth" name="coth" placeholder="eg: 5 (in years)" required \>
+                </div>
+                <div class="container">
+                    <label for="goth" >Grade  of  the  house</label>
+                    <input type="number" class="form-control mb-1" id="goth" name="goth" placeholder="eg: 10 (in years)" required \>
+                </div>
+            </div>
+            <div class="container" id="bb">
+                <div class="container">
+                    <label for="ryear" >Renovation Year</label>
+                    <input type="number" class="form-control mb-1" id="ryear" name="ryear" placeholder="eg: 2025" required \>
+                </div>
+                <div class="container">
+                    <label for="lat" > Lattitude  </label>
+                    <input type="float" class="form-control mb-1" id="lat" name="lat" placeholder="eg: 52.8645" required \>
+                </div>
+            </div>
+            <div class="container" id="bb">
+                <div class="container">
+                    <label for="aar" >Area after Renovation</label>
+                    <input type="number" class="form-control mb-1" id="aar" name="aar" placeholder="eg: 2015" required \>
+                </div>
+            </div>
+            <div class="container text-center p-3 ">
+                <button class="btn btn-danger">PREDICT</button>
+                <button type="reset" class="btn btn-primary">RESET</button>
+            </div> 
+             
+        </form>
+    </div>
+   
+</body>
+
+</html>
